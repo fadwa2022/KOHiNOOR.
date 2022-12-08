@@ -14,7 +14,7 @@ define('APPROOT',dirname(dirname(__FILE__)));
 // URL ROOT
 define('URLROOT','http://localhost/sitebijout');
 // Site Name
- define('SITENAME','Kohinoor');
+define('SITENAME','Kohinoor');
   
   ?>
   
