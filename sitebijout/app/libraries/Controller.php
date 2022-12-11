@@ -16,10 +16,10 @@ class Controller{
     //  load view
     public function view($view, $data = []){
         // check for the view file
-        if (file_exists('../app/views/'.$view.'.php'))
+        if (file_exists('../app/views/' . $view . '.php'))
        {
          // require view file
-        require_once '../app/views/'.$view.'.php'; 
+        require_once '../app/views/' . $view . '.php'; 
     }else{
             // view does not exist 
             die ('View does not exist');

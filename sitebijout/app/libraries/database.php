@@ -48,7 +48,7 @@ class Database
     //  lier les valeurs 
     public function bind($param, $value, $type = null)
     {
-        if (is_null(true)) {
+        if (is_null($type)) {
             switch (true) {
                 case is_int($value):
                     $type = PDO::PARAM_INT;
@@ -63,7 +63,7 @@ class Database
                     $type = PDO::PARAM_STR;
             }
         }
-        $this->stmt->bindValue($param);
+        $this->stmt->bindValue($param, $value, $type);
     }
     // execute the prepared statement
     public function execute()

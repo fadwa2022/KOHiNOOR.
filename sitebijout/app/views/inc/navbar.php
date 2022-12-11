@@ -28,10 +28,20 @@
               <li class="nav-item">
                 <a class="nav-link" style="font-size: 1.25em ;" href="<?php echo URLROOT; ?>/pages/contact"> Contact</a>
               </li>
-              <li class="nav-item">
-              <svg   class="d-none d-lg-block" style="margin: 27%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" ><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h8v2H5v3l-5-4 5-4v3zm-1 7h2.708a8 8 0 1 0 0-12H4A9.985 9.985 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4z" fill="rgba(255,255,255,1)"/></svg>       
-              <svg   class="d-lg-none" style="margin:40%"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h8v2H5v3l-5-4 5-4v3zm-1 7h2.708a8 8 0 1 0 0-12H4A9.985 9.985 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4z"/></svg>
+
+          <?php if(isset($_SESSION['user_id'])) : ?>
+            <li class="nav-item">
+            <a href="<?php echo URLROOT; ?>/users/logout">  <svg    class="d-none d-lg-block" style="margin: 27%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" ><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h8v2H5v3l-5-4 5-4v3zm-1 7h2.708a8 8 0 1 0 0-12H4A9.985 9.985 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4z" fill="rgba(255,255,255,1)"/></svg>     </a>  
+            <a href="<?php echo URLROOT; ?>/users/logout"> <svg   class="d-lg-none" style="margin:40%"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M5 11h8v2H5v3l-5-4 5-4v3zm-1 7h2.708a8 8 0 1 0 0-12H4A9.985 9.985 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4z"/></svg> </a>
             </li>
+            <?php else : ?>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size: 1.25em ;" href="<?php echo URLROOT; ?>/users/login"> login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: 1.25em ;" href="<?php echo URLROOT; ?>/users/register"> register</a>
+              </li>
+            <?php endif; ?>
             </ul>
 
           </div>
