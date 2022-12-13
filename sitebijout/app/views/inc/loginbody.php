@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?php echo URLROOT; ?>/css/stylelogreg.css">
+
 <section class="vh-100 m-5">
     <div class="container-fluid">
         <div class="row">
@@ -9,7 +11,7 @@
                 </div>
 
                 <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-                    <form style="width: 23rem;" action="<?php echo URLROOT; ?>/users/login" method="POST">
+                    <form style="width: 23rem;     margin-top: 13%;" action="<?php echo URLROOT; ?>/users/login" method="POST">
                         <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
                         <!-- email -->
 

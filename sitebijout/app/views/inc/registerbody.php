@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?php echo URLROOT; ?>/css/stylelogreg.css">
+
 <section class="vh-100 m-5">
     <div class="container-fluid">
         <div class="row">

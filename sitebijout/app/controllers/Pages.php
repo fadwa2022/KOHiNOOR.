@@ -8,7 +8,7 @@ class Pages extends Controller{
           $data=[
                'title' => 'SITEBIJOUX',
           ];
-            $this->view('pages/index',$data);
+          $this->view('pages/index',$data);
 
      }
      public function about(){
@@ -29,5 +29,10 @@ class Pages extends Controller{
           ];
           $this->view('pages/contact',$data);
      }
-
+     public function dashbord(){
+          $data=[
+               'title' => 'dashbord'
+          ];
+          $this->view('pages/dashbord',$data);
+     }
 }

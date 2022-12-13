@@ -56,7 +56,7 @@
                </div>
                <div class="col-md-6">
                  <div class="img-box">
-                   <img src="images/slider-img.png" alt="">
+                   <img src="<?php echo URLROOT; ?>/images/slider-img.png" alt="">
                  </div>
                </div>
              </div>

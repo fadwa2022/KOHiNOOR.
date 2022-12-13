@@ -22,8 +22,6 @@ class User
             return false;
         }
     }
-
-
     //  login user
     public function login($email, $password)
     {
