@@ -1,4 +1,5 @@
 <?php require  APPROOT .'/views/inc/header.php';?>
+
   <!-- price section -->
   <section class="price_section layout_padding">
       <div class="container">
@@ -21,13 +22,13 @@
                       </h6>
                   </div>
                   <div class="img-box">
-                      <img src="<?php echo URLROOT; ?> <?php echo $article->image ;?>" alt="">
+                      <img src="<?php echo URLROOT; ?>/images/<?php echo $article->image; ?>" alt="">
                   </div>
                   <div class="detail-box">
                       <h5>
                           $<span> <?php echo $article->prix ;?></span>
                       </h5>
-                      <a href="">
+                      <a href="<?php echo URLROOT; ?>/articles/show/<?php echo $article->id_prod; ?>">
                           Buy Now
                       </a>
                   </div>
