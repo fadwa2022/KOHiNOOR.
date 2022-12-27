@@ -120,9 +120,9 @@ class Articles extends Controller
             if (empty($data['prix'])) {
                 $data['prix_err'] = 'please enter prix';
             }
-            // if(empty($data['image'])){
-            // //     $data['image_err'] = 'please enter image';
-            // }
+            if(empty($data['image'])){
+                $data['image_err'] = 'please enter image';
+            }
 
             // make sure no errors
             if (empty($data['name_prod_err']) && empty($data['quantite_err']) && empty($data['prix_err'])) {

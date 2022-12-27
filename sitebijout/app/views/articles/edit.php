@@ -30,6 +30,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="formFile" class="form-label  <?php echo (!empty($data['image_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['image']; ?>">Product Image</label>
+                            <div class="invalid-feedback"><?php echo $data['image_err']; ?></div>
+
                             <input class="form-control " type="file" name="image" id="formFile" >
                         </div>
 

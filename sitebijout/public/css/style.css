@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  background-image: url('<?php echo URLROOT; ?>/images/slider-img.png');
 }
 
 .layout_padding {
@@ -53,7 +54,8 @@ body {
 .hero_area {
   height: 100vh;
   position: relative;
-  background-image: url(../images/hero-bg.png);
+  /* background-image: url('<?php URLROOT;?>/images/hero-bg.png');
+   */
   background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
